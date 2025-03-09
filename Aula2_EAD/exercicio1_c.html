@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cadastro de Produtos em Estoque</h1>
+    <form action="pagina.php">
+        Nome do Produto: <input type="text" name="nome" placeholder="Ex: Arroz" required><br><br>
+
+        Categoria:
+        <select name="categoria" required>
+            <option value="">Selecione uma categoria</option>
+            <option value="alimentos">Alimentos</option>
+            <option value="bebidas">Bebidas</option>
+            <option value="higiene">Higiene Pessoal</option>
+            <option value="limpeza">Limpeza</option>
+            <option value="outros">Outros</option>
+        </select><br><br>
+
+        Quantidade em Estoque: <input type="number" name="quantidade" min="0" placeholder="Ex: 50" required><br><br>
+
+        Preço Unitário (R$): <input type="number" name="preco" step="0.01" min="0" placeholder="Ex: 10.50" required><br><br>
+
+        Data de Validade: <input type="date" name="validade" required><br><br>
+
+        Observações: <textarea name="observacoes" rows="4" placeholder="Informações adicionais..."></textarea><br><br>
+
+        <input type="submit" value="Cadastrar Produto">
+    </form>
+</body>
+</html>

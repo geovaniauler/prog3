@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Empresa X</h1>
+    <h3>Selecione o assunto da reclamação e descreva o motivo</h3>
+    <form action="pagina.php">
+        <select name="motivo">
+        <option value="">Selecione um motivo</option>
+        <option value="atraso">Atraso</option>
+        <option value="defeito">Defeito</option>
+        <option value="produtoincorreto">Produto Incorreto</option>
+        <option value="outro">Outros</option>
+        </select>
+        <br><br>
+        <textarea name="message" rows="10" cols="30" placeholder="Informações adicionais..."></textarea>
+            <br><br>
+        <input type="submit" value="Enviar">
+        </form>
+</body>
+</html>
