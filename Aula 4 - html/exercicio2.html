@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calcular temperatura</title>
+    <script>
+        function calc(){
+            let saida = "";
+            let cel = 0;
+            let far = Math.floor(cel * 1.8 + 32);
+            for (cel = 0, cel <= 100, cel++){
+                saida += "${cel}°C = ${far}°F<br>";
+            }
+            document.getElementById("saida").innerHTML = saida;
+        }
+    </script>
+</head>
+<body>
+    <h1>Calcular temperatura</h1>
+    <div id="saida"></div>
+</body>
+</html>
