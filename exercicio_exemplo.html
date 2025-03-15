@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio_exemplo</title>
+    <script>
+        function calc(){
+            let tempo = parseInt(document.getElementById("dias").value);
+            let anos = Math.floor(tempo/365);
+            let resto1 = tempo%365;
+            let meses = Math.floor(resto1/30);
+            let resto2 = resto1%30;
+            let res = "Resultado: " + anos + " ano(s), " + meses
+                        + " mes(es), " + resto2 + " dia(s)";
+            document.getElementById("saida").innerHTML = res;
+
+            //console.log(anos, "ano(s),", meses, "mes(es),", resto2, "dia(s)");
+        }
+    </script>
+</head>
+<body>
+    <h1>Tempo</h1>
+    <input type="number" name="dias" id="dias">
+    <button type="button" onclick="calc()">Calcular</button>
+    <p id="saida"></p>
+</body>
+</html>

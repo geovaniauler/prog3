@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 1</title>
+    <script>
+        function vota(){
+            let idade = parseInt(document.getElementById("anos").value);
+            if (idade <= 60){
+                document.getElementById("saida").innerHTML = "Tem que votar";
+            }
+            else{
+                document.getElementById("saida").innerHTML = "Nao vota";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Exercicio 1</h1>
+    <input type="number" name="anos" id="anos">
+    <button type="button" onclick="vota()">Conferir Voto</button>
+    <p id="saida"></p>
+</body>
+</html>

@@ -1,0 +1,19 @@
+#times {
+    color: darkcyan;
+    font-size: 40px;
+}
+
+.gremio {
+    color: blue;
+}
+.inter {
+    color: red;
+}
+
+p.gremio {
+    color: lightskyblue;
+}
+
+p.inter {
+    color: lightcoral;
+}
