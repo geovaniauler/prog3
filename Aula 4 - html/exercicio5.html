@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>        
+        
+        function men(){
+            let turno = document.getElementById("turno").value
+            let nome = document.getElementById("nome").value
+            let mensagem = ``;
+            if (turno == "dia"){
+                mensagem = `Bom dia, ${nome}`
+            }
+            else if (turno == "tarde"){
+                mensagem = `Boa tarde, ${nome}`
+            }
+            else {
+                mensagem = `Boa noite, ${nome}`
+            }
+            document.getElementById("saida").innerHTML = mensagem
+        }
+    </script>
+</head>
+<body>
+    <h1> Selecione</h1>
+    <select id="turno">
+        <option value="dia">Dia</option>
+        <option value="tarde">Tarde</option>
+        <option value="noite">Noite</option>
+        </select>
+        <br><br>
+        <input type="text" name="nome" id="nome">
+        <input type="submit" onclick="men()">
+    <div id="saida"></div>
+</body>
+</html>

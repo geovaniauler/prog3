@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let array1 = [1,5,3,5];
+        let array2 = [];
+        console.log(array1);
+        alterarArray(array1);
+        console.log(array2);
+        function alterarArray(){
+        array1.forEach(element => {
+            if(element == 1){
+                //adiciona um item na lista array2
+                array2.push("um")
+            }
+            else if (element == 5){
+                array2.push("cinco")
+            }
+            else if (element == 3){
+                array2.push("tres")
+            }
+        });
+    }
+    </script>
+</head>
+<body>
+    <h1>Alterar Array</h1>
+</body>
+</html>

@@ -7,12 +7,14 @@
         function calc(){
             let saida = "";
             let cel = 0;
-            let far = Math.floor(cel * 1.8 + 32);
-            for (cel = 0, cel <= 100, cel++){
-                saida += "${cel}°C = ${far}°F<br>";
+            
+            for (cel = 0; cel <= 100; cel++){
+                let far = Math.floor(cel * 1.8 + 32);
+                saida += `${cel}°C = ${far}°F<br>`;
             }
             document.getElementById("saida").innerHTML = saida;
         }
+        calc();
     </script>
 </head>
 <body>
