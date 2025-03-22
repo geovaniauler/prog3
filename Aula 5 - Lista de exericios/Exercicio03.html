@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function calc(){
+            let n1 = parseInt(document.getElementById("number1").value);
+            let n2 = parseInt(document.getElementById("number2").value);
+            let radio = document.getElementsByName("resp");
+            let opcao = "";
+            let saida = "";
+            for (let i=0; i < radio.length; i++){
+                if (radio[i].checked){
+                    opcao = radio[i].value                    
+                }
+            }
+            if (opcao == "soma"){
+                let res = n1+n2;
+                saida += `${n1}+${n2}=${res}<br>`;
+            }
+            if (opcao == "sub"){
+                let res = n1-n2;
+                saida += `${n1}-${n2}=${res}<br>`;
+            }
+            if (opcao == "multi"){
+                let res = n1*n2;
+                saida += `${n1}x${n2}=${res}<br>`;
+            }
+            if (opcao == "divi"){
+                let res = n1/n2;
+                saida += `${n1}/${n2}=${res}<br>`;
+            }
+            if (opcao == "pote"){
+                let res = Math.pow(n1, n2)
+                saida += `${n1}^${n2}=${res}<br>`;
+            }
+            document.getElementById("saida").innerHTML = saida;
+        }
+    </script>
+</head>
+<body>
+    <h1>Numeros</h1>
+    <input type="number" id="number1" placeholder="Numero inicial"><br>
+    <input type="number" id="number2" placeholder="Numero final"><br>
+    <input type="radio" name="resp" value="soma" checked> Somar <br>
+    <input type="radio" name="resp" value="sub"> Subtrair <br>
+    <input type="radio" name="resp" value="multi"> Multiplicar <br>
+    <input type="radio" name="resp" value="divi"> Dividir <br>
+    <input type="radio" name="resp" value="pote"> Potencia <br><br>
+    <button type="button" onclick="calc()">Calcular</button>
+    <p id="saida"></p>
+</body>
+</html>

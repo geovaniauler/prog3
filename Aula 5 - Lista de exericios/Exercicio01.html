@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function calc(){
+            let n1 = parseInt(document.getElementById("number1").value);
+            let n2 = parseInt(document.getElementById("number2").value);
+            if (n1 > n2){
+                [n1, n2] = [n2, n1]
+            }
+            let saida = "";
+            for (n=n1; n<=n2; n++){
+                if (n % 2 == 0){
+                    saida += `<li>${n}</li>`;
+                }
+            }
+            document.getElementById("saida").innerHTML = saida;
+            //let dif1 = (n2-n1);
+            //let dif2 = (n1-n2);
+            //if (dif1 > 0){
+            //    for (n = 0; n<dif1; n++){
+            //        let pares = Math.floor(n % 2 == 0);
+            //        saida += pares;
+            //    }
+            //    document.getElementById("saida").innerHTML = saida;
+            //}
+            //else if (dif2 > 0){
+            //    for (n = 0; n<dif2; n++){
+            //        let pares = Math.floor(n % 2 == 0);
+            //        saida += pares;
+            //    }
+            //    document.getElementById("saida").innerHTML = saida;
+            //}
+        }
+    </script>
+</head>
+<body>
+    <h1>Numeros</h1>
+    <input type="number" id="number1" placeholder="Numero inicial"><br>
+    <input type="number" id="number2" placeholder="Numero final"><br>
+    <button type="button" onclick="calc()">Calcular</button>
+    <ul id="saida"></ul>
+</body>
+</html>

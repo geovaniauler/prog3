@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        let mensagem = document.getElementsByName("message")[0].value
+        let n = parseInt(document.getElementById("number").value);
+        
+    </script>
+</head>
+<body>
+    <h1>Numero</h1>
+    <input type="number" id="number" min="0" placeholder="Digite um número" required>
+    <h1>Texto</h1>
+    <form>
+        <textarea name="message" placeholder="Digite aqui..." required></textarea>
+    </form><br>
+    <button type="button" onclick="calc()">Botão</button>
+    <p id="saida"></p>
+</body>
+</html>

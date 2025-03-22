@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        function men(){
+            let mensagem = document.getElementsByName("message")[0].value
+            let radio = document.getElementsByName("resp");
+            let opcao = "";
+            for (let i=0; i < radio.length; i++){
+                if (radio[i].checked){
+                    opcao = radio[i].value
+                }
+            }
+            if (opcao == "important"){
+                mensagem = `<p style="color: red;">${mensagem}</p>`
+            }
+            else if (opcao == "notimportant"){
+                mensagem = `<p style="color: blue;">${mensagem}</p>`
+            }
+            document.getElementById("saida").innerHTML = mensagem
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <textarea name="message" rows="10" cols="30" placeholder="Digite aqui..."></textarea>
+        <br>
+    </form>
+    <input type="radio" name="resp" value="important" checked> Importante <br>
+    <input type="radio" name="resp" value="notimportant"> Não Importante <br><br>
+    <input type="submit" onclick="men()">
+    <div id="saida"></div>
+</body>
+</html>
