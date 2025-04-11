@@ -4,8 +4,7 @@ const cidades = [
 
 
 function msg(){
-    const palavra = document.getElementsByName('city')[0].value;
-    cidades.push(palavra);
+    cidades.pop(cidades);
     const lista = document.createElement('ol');
 
 
