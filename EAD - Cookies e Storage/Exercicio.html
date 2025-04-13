@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="Exercicio.js"></script>
+</head>
+<body>
+    <h1>Formulario</h1><br>
+    <form id="formulario">
+        Nome: <input type="text" name="Nome" id="nome" placeholder="Digite seu nome" required><br><br>
+        Sobrenome: <input type="text" name="Sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" required><br><br>
+        E-mail: <input type="email" name="Email" id="email" placeholder="Digite seu e-mail" required><br><br>
+        <h2>Endereço</h2>
+        Rua: <input type="text" name="Rua" id="rua" placeholder="Digite sua rua" required><br><br>
+        Número: <input type="number" name="Numero" id="numero" placeholder="Digite o número" required><br><br>
+        Complemento: <input type="text" name="Complemento" id="complemento" placeholder="Digite o complemento"><br><br>
+        CEP: <input type="number" name="CEP" id="cep" placeholder="Digite o CEP" required><br><br>
+        Cidade: <input type="text" name="Cidade" id="cidade" placeholder="Digite a cidade" required><br><br>
+        <input type="checkbox" name="checkbox" id="checkbox" required> Aceito receber e-mails<br><br>
+        <button type="button" onclick="localStorageSet()">Local Storage</button>
+        <button type="button" onclick="sessionStorageSet()">Session Storage</button><br><br>
+        <button type="button" onclick="cookiesSet()">Cookies</button><br><br>
+    </form>
+</body>
+</html>
