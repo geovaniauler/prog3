@@ -34,10 +34,12 @@ function criarobjeto(){
 
     objetos.forEach(obj => {
         let objString = '';
-        for (key in obj){
-            objString += `${obj[key]} `;
-        }
-        document.getElementById('saida').innerText += `${objString} \n`
+    //    for (key in obj){
+    //        objString += `${obj[key]} `;
+    //    }
+        objString += `${obj.nomedotime} ${obj.treinador} ${obj.estadio} ${obj.cidade}`;
+
+        document.getElementById('saida').innerText += `${objString} \n`;
     });
     
 }
