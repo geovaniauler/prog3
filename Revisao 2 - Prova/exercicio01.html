@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercicio 1</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+    <script src="exercicio01.js" defer></script>
+</head>
+<body>
+    <h1>Cadastro de Clientes</h1><p></p>
+    <h2>Exercício 1</h2><p></p>
+    <div>
+        Nome Completo <input type="text" name="nome" id="nome" required><p></p>
+        CPF <input type="text" name="cpf" id="cpf" required><p></p>
+        E-mail <input type="email" name="email" id="email" required><p></p>
+        Telefone <input type="number" name="tele" id="tele" required><p></p>
+    </div>
+    <div>
+        <button type="button" onclick="cadastrar()">Cadastrar</button><p></p>
+    </div>
+    <div>
+        <table id="tabela">
+            <tr>
+                <td>Nome Completo</td>
+                <td>CPF</td>
+                <td>E-mail</td>
+                <td>Telefone</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
