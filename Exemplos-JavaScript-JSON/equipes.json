@@ -1,0 +1,39 @@
+{
+    "equipes": [
+        {
+            "nome": "Gremio",
+            "estado": "RS",
+            "rankingFifa": 150,
+            "treinador": {
+            "nome": "Mano",
+            "sobrenome": "Menezes",
+            "nacionalidade": "Brasileiro"
+            },
+            "mundial": true
+        },
+
+        {
+            "nome": "Internacional",
+            "estado": "RS",
+            "rankingFifa": 151,
+            "treinador": {
+                "nome": "Roger",
+                "sobrenome": "Machado",
+                "nacionalidade": "Brasileiro"
+            },
+            "mundial": true
+        },
+
+        {
+            "nome": "Palmeiras",
+            "estado": "SP",
+            "rankingFifa": 116,
+            "treinador": {
+                "nome": "Abel",
+                "sobrenome": "Ferreira",
+                "nacionalidade": "Brasileiro"
+            },
+            "mundial": false
+        }
+    ]
+}
